@@ -25,5 +25,5 @@ jobs:
       run: dotnet build --no-restore -p:Configuration=Release
 
     - name: Publish to NuGet
-      run: dotnet nuget push "/home/runner/work/OwlCore.Template/OwlCore.Template/src/bin/Release/OwlCore.Template.*.*.*.nupkg" --skip-duplicate --api-key ${{secrets.NUGET_KEY}} --source https://api.nuget.org/v3/index.json
+      run: dotnet nuget push "/home/runner/work/OwlCore.Diagnostics/OwlCore.Diagnostics/src/bin/Release/OwlCore.Diagnostics.*.*.*.nupkg" --skip-duplicate --api-key ${{secrets.NUGET_KEY}} --source https://api.nuget.org/v3/index.json
       
