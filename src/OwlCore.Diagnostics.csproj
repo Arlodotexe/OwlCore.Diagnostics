@@ -18,6 +18,7 @@
 		<Product>OwlCore</Product>
 		<Description>Supplemental diagnostic tooling for dotnet.</Description>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageIcon>logo.png</PackageIcon>
 		<PackageProjectUrl>https://github.com/Arlodotexe/OwlCore.Diagnostics</PackageProjectUrl>
 		<PackageReleaseNotes>
@@ -51,6 +52,7 @@ Initial release of OwlCore.Diagnostics.
 			<Pack>True</Pack>
 			<PackagePath></PackagePath>
 		</None>
+    <None Include="README.md" Pack="true" PackagePath="\"/>
 	</ItemGroup>
 
 	<ItemGroup>
