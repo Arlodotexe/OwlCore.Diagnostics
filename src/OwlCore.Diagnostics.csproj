@@ -14,14 +14,22 @@
 		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
 
 		<Author>Arlo Godfrey</Author>
-		<Version>0.0.0</Version>
+		<Version>0.1.0</Version>
 		<Product>OwlCore</Product>
 		<Description>Supplemental diagnostic tooling for dotnet.</Description>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
+    	<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageIcon>logo.png</PackageIcon>
 		<PackageProjectUrl>https://github.com/Arlodotexe/OwlCore.Diagnostics</PackageProjectUrl>
 		<PackageReleaseNotes>
+--- 0.1.0 ---
+[Improvements]
+Added explicit TargetFrameworks for net8.0, net9.0 and net10.0 to supplement netstandard2.0. 
+Updated dependencies to latest versions.
+
+[Fixes]
+Fixed Logger.Log accepting a LogLevel parameter but hardcoding LogLevel.Critical when constructing LoggerMessageEventArgs, causing every call to emit a Critical-level event regardless of the specified level.
+
 --- 0.0.0 ---
 [New]
 Initial release of OwlCore.Diagnostics.
@@ -62,7 +70,7 @@ Initial release of OwlCore.Diagnostics.
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Update="logo.png">
+	  <None Include="logo.png">
 	    <Pack>True</Pack>
 	    <PackagePath>\</PackagePath>
 	  </None>
