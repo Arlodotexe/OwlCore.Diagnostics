@@ -59,7 +59,7 @@ namespace OwlCore.Diagnostics
         /// </summary>
         public static void Log(string msg, LogLevel level, [CallerMemberName] string memberName = "", [CallerFilePath] string fileName = "", [CallerLineNumber] int lineNumber = 0)
         {
-            MessageReceived?.Invoke(null, new LoggerMessageEventArgs(msg, LogLevel.Critical, memberName, fileName, lineNumber));
+            MessageReceived?.Invoke(null, new LoggerMessageEventArgs(msg, level, memberName, fileName, lineNumber));
         }
 
         /// <summary>
